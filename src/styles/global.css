@@ -1,0 +1,30 @@
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; background: var(--surface-page); color: var(--text-primary); font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif; -webkit-font-smoothing: antialiased; }
+body.nav-open { overflow: hidden; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+a, button { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+:focus-visible { outline: 2px solid var(--color-forest); outline-offset: 3px; }
+::selection { background: var(--color-sand); color: var(--color-ink); }
+.container { width: min(calc(100% - 2 * var(--page-gutter)), var(--container-width)); margin-inline: auto; }
+.skip-link { position: fixed; left: 16px; top: -100px; z-index: 200; background: var(--color-ink); color: var(--color-canvas); padding: 12px 20px; }
+.skip-link:focus { top: 12px; }
+main { min-width: 0; }
+.button { display: inline-flex; justify-content: space-between; align-items: center; gap: 40px; min-height: 48px; padding: 12px 22px; border: 1px solid transparent; border-radius: var(--radius-sm); font-size: 14px; font-weight: 700; letter-spacing: .02em; transition: background .2s ease, color .2s ease, transform .2s ease; }
+.button:hover { transform: translateY(-2px); }
+.button:active { transform: translateY(0); }
+.button--primary { background: var(--action-primary-bg); color: var(--action-primary-fg); }
+.button--primary:hover { background: var(--color-forest); }
+.button--light { background: var(--color-canvas); color: var(--color-ink); }
+.button--light:hover { background: var(--color-paper); }
+.text-link { display: inline-flex; align-items: center; gap: 22px; min-height: 44px; border-bottom: 1px solid currentColor; font-size: 14px; font-weight: 700; transition: gap .2s ease, color .2s ease; }
+.text-link:hover { gap: 30px; color: var(--color-forest); }
+.text-link span[aria-hidden] { font-size: 20px; font-weight: 400; }
+.eyebrow { margin: 0; display: flex; align-items: center; gap: 12px; font-family: "Noto Sans TC", sans-serif; font-size: 11px; font-weight: 700; letter-spacing: .16em; line-height: 1.5; }
+.eyebrow__line { width: 28px; height: 1px; flex: none; background: currentColor; }
+.mobile-only { display: none; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }
+@media (max-width: 767px) { .mobile-only { display: inline-flex; } }

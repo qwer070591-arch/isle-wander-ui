@@ -1,0 +1,9 @@
+[
+  { "id": "nature", "name": "自然景觀", "english": "NATURE" },
+  { "id": "coast", "name": "海岸風景", "english": "COAST" },
+  { "id": "trail", "name": "山林步道", "english": "TRAILS" },
+  { "id": "culture", "name": "歷史文化", "english": "CULTURE" },
+  { "id": "urban", "name": "城市街區", "english": "STREETS" },
+  { "id": "arts", "name": "藝文建築", "english": "ARTS" },
+  { "id": "leisure", "name": "休閒體驗", "english": "LEISURE" }
+]

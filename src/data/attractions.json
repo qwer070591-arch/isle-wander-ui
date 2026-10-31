@@ -1,0 +1,888 @@
+[
+  {
+    "id": "attraction-dadaocheng-streets",
+    "slug": "dadaocheng-streets",
+    "officialId": "Attraction_379000000A_000105",
+    "nameZh": "大稻埕街區",
+    "cityId": "city-taipei",
+    "category": "urban",
+    "shortDescription": "沿著迪化街的店屋與街道，讀淡水河畔的商業記憶。",
+    "tags": [
+      "老街",
+      "迪化街"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2026-05-22",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 25.06086,
+      "lng": 121.50926
+    }
+  },
+  {
+    "id": "attraction-national-palace-museum",
+    "slug": "national-palace-museum",
+    "officialId": "Attraction_379000000A_000019",
+    "nameZh": "國立故宮博物院",
+    "cityId": "city-taipei",
+    "category": "arts",
+    "shortDescription": "走進外雙溪的博物館，從典藏與建築認識歷史。",
+    "tags": [
+      "博物館",
+      "文物"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2026-05-20",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 25.10236,
+      "lng": 121.54849
+    }
+  },
+  {
+    "id": "attraction-huashan-1914",
+    "slug": "huashan-1914",
+    "officialId": "Attraction_379000000A_001592",
+    "nameZh": "華山1914文化創意產業園區",
+    "cityId": "city-taipei",
+    "category": "arts",
+    "shortDescription": "從舊酒廠轉身為藝文園區，保留城市裡的產業痕跡。",
+    "tags": [
+      "文創",
+      "藝文"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2026-06-16",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 25.04413,
+      "lng": 121.5294
+    }
+  },
+  {
+    "id": "attraction-xiangshan-trail",
+    "slug": "xiangshan-trail",
+    "officialId": "Attraction_379000000A_000185",
+    "nameZh": "象山親山步道",
+    "cityId": "city-taipei",
+    "category": "trail",
+    "shortDescription": "循著親山步道登高，從山徑回望臺北市區。",
+    "tags": [
+      "山徑",
+      "步道"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2026-05-22",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 25.027381,
+      "lng": 121.570952
+    }
+  },
+  {
+    "id": "attraction-shifen-waterfall",
+    "slug": "shifen-waterfall",
+    "officialId": "Attraction_382000000A_109612",
+    "nameZh": "十分瀑布公園",
+    "cityId": "city-new-taipei",
+    "category": "nature",
+    "shortDescription": "基隆河在岩層落差間形成瀑布與周邊地質景觀。",
+    "tags": [
+      "瀑布",
+      "森林"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2024-12-05",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 25.04897,
+      "lng": 121.78746
+    }
+  },
+  {
+    "id": "attraction-yingge-ceramics-museum",
+    "slug": "yingge-ceramics-museum",
+    "officialId": "Attraction_382000000A_109616",
+    "nameZh": "新北市立鶯歌陶瓷博物館",
+    "cityId": "city-new-taipei",
+    "category": "arts",
+    "shortDescription": "以陶瓷為線索，認識鶯歌與臺灣的工藝發展。",
+    "tags": [
+      "陶瓷",
+      "博物館"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2026-05-11",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 24.94925,
+      "lng": 121.35203
+    }
+  },
+  {
+    "id": "attraction-jiufen-old-street",
+    "slug": "jiufen-old-street",
+    "officialId": "Attraction_382000000A_109990",
+    "nameZh": "九份老街",
+    "cityId": "city-new-taipei",
+    "category": "urban",
+    "shortDescription": "沿著山城街巷，尋訪九份與採金年代留下的記憶。",
+    "tags": [
+      "山城",
+      "老街"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2025-02-13",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 25.10987,
+      "lng": 121.84518
+    }
+  },
+  {
+    "id": "attraction-yehliu-geopark",
+    "slug": "yehliu-geopark",
+    "officialId": "Attraction_382000000A_109735",
+    "nameZh": "野柳地質公園",
+    "cityId": "city-new-taipei",
+    "category": "coast",
+    "shortDescription": "海蝕與風化雕刻出岬角的岩石地景。",
+    "tags": [
+      "海岸",
+      "地質"
+    ],
+    "coverMediaId": "photo-yehliu-geopark",
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2026-07-01",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 25.2064,
+      "lng": 121.69047
+    }
+  },
+  {
+    "id": "attraction-national-taichung-theater",
+    "slug": "national-taichung-theater",
+    "officialId": "Attraction_387000000A_000942",
+    "nameZh": "臺中國家歌劇院",
+    "cityId": "city-taichung",
+    "category": "arts",
+    "shortDescription": "以曲面建築與表演空間，感受城市的藝文節奏。",
+    "tags": [
+      "建築",
+      "表演"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2026-09-07",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 24.16265,
+      "lng": 120.6403
+    }
+  },
+  {
+    "id": "attraction-gaomei-wetlands",
+    "slug": "gaomei-wetlands",
+    "officialId": "Attraction_387000000A_000054",
+    "nameZh": "高美濕地",
+    "cityId": "city-taichung",
+    "category": "coast",
+    "shortDescription": "在大甲溪出海口附近，觀察濕地與海岸的交界。",
+    "tags": [
+      "濕地",
+      "海岸"
+    ],
+    "coverMediaId": "photo-gaomei-wetland",
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2026-03-31",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 24.31195,
+      "lng": 120.54981
+    }
+  },
+  {
+    "id": "attraction-taichung-park",
+    "slug": "taichung-park",
+    "officialId": "Attraction_387000000A_000028",
+    "nameZh": "臺中公園",
+    "cityId": "city-taichung",
+    "category": "leisure",
+    "shortDescription": "湖面、亭臺與曲橋，構成臺中市區的老公園風景。",
+    "tags": [
+      "公園",
+      "城市"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2026-09-08",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 24.14431,
+      "lng": 120.68571
+    }
+  },
+  {
+    "id": "attraction-wuling-forest",
+    "slug": "wuling-forest",
+    "officialId": "Attraction_387000000A_000395",
+    "nameZh": "武陵國家森林遊樂區",
+    "cityId": "city-taichung",
+    "category": "nature",
+    "shortDescription": "走進高海拔森林，感受山區植被與地形的層次。",
+    "tags": [
+      "森林",
+      "山景"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2023-09-26",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 24.34787,
+      "lng": 121.30981
+    }
+  },
+  {
+    "id": "attraction-xitou-nature-education-area",
+    "slug": "xitou-nature-education-area",
+    "officialId": "Attraction_376480000A_000301",
+    "nameZh": "溪頭自然教育園區",
+    "cityId": "city-nantou",
+    "category": "trail",
+    "shortDescription": "在溪頭的林間步道，認識森林與自然教育。",
+    "tags": [
+      "森林",
+      "自然教育"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2023-06-30",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 23.67451,
+      "lng": 120.79725
+    }
+  },
+  {
+    "id": "attraction-qingjing-farm",
+    "slug": "qingjing-farm",
+    "officialId": "Attraction_376480000A_000253",
+    "nameZh": "清境農場",
+    "cityId": "city-nantou",
+    "category": "leisure",
+    "shortDescription": "高山草原與步道相連，展開南投的山景視野。",
+    "tags": [
+      "高山",
+      "農場"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2023-06-30",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 24.05851,
+      "lng": 121.16282
+    }
+  },
+  {
+    "id": "attraction-checheng-station",
+    "slug": "checheng-station",
+    "officialId": "Attraction_376480000A_000319",
+    "nameZh": "車埕火車站",
+    "cityId": "city-nantou",
+    "category": "culture",
+    "shortDescription": "從集集支線的終點站，走進車埕的鐵道記憶。",
+    "tags": [
+      "鐵道",
+      "木業"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2023-06-30",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 23.83262,
+      "lng": 120.86086
+    }
+  },
+  {
+    "id": "attraction-aowanda-forest",
+    "slug": "aowanda-forest",
+    "officialId": "Attraction_345040000G_000011",
+    "nameZh": "奧萬大國家森林遊樂區",
+    "cityId": "city-nantou",
+    "category": "nature",
+    "shortDescription": "森林、溪流與吊橋，串起奧萬大的山林景色。",
+    "tags": [
+      "森林",
+      "溪流"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2026-10-29",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 23.954269695292318,
+      "lng": 121.16951663830639
+    }
+  },
+  {
+    "id": "attraction-chihkan-tower",
+    "slug": "chihkan-tower",
+    "officialId": "Attraction_395000000A_000674",
+    "nameZh": "赤崁樓",
+    "cityId": "city-tainan",
+    "category": "culture",
+    "shortDescription": "從古蹟建築，閱讀臺南早期城市發展的線索。",
+    "tags": [
+      "古蹟",
+      "歷史"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2025-10-31",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 22.99722,
+      "lng": 120.20242
+    }
+  },
+  {
+    "id": "attraction-shennong-street",
+    "slug": "shennong-street",
+    "officialId": "Attraction_395000000A_001351",
+    "nameZh": "神農街",
+    "cityId": "city-tainan",
+    "category": "urban",
+    "shortDescription": "沿著五條港舊街區，觀看老屋與街道的今日生活。",
+    "tags": [
+      "老街",
+      "街區"
+    ],
+    "coverMediaId": "photo-shennong-street",
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2024-01-09",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 22.99757,
+      "lng": 120.19655
+    }
+  },
+  {
+    "id": "attraction-anping-old-fort",
+    "slug": "anping-old-fort",
+    "officialId": "Attraction_395000000A_000671",
+    "nameZh": "安平古堡",
+    "cityId": "city-tainan",
+    "category": "culture",
+    "shortDescription": "從安平的堡壘遺跡，認識臺南港口的歷史。",
+    "tags": [
+      "古蹟",
+      "海港"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2025-02-08",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 23.00092,
+      "lng": 120.16062
+    }
+  },
+  {
+    "id": "attraction-chimei-museum",
+    "slug": "chimei-museum",
+    "officialId": "Attraction_395000000A_000572",
+    "nameZh": "奇美博物館",
+    "cityId": "city-tainan",
+    "category": "arts",
+    "shortDescription": "以博物館建築與展覽，留一段時間給藝術。",
+    "tags": [
+      "博物館",
+      "建築"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2024-01-09",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 22.93482,
+      "lng": 120.22619
+    }
+  },
+  {
+    "id": "attraction-sizihwan-viewpoint",
+    "slug": "sizihwan-viewpoint",
+    "officialId": "Attraction_397000000A_001214",
+    "nameZh": "西子灣觀景台（觀海平台）",
+    "cityId": "city-kaohsiung",
+    "category": "coast",
+    "shortDescription": "在西子灣的觀海平台，望向高雄的海港與夕光。",
+    "tags": [
+      "海岸",
+      "觀景"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2023-02-05",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 22.61769,
+      "lng": 120.26591
+    }
+  },
+  {
+    "id": "attraction-cijin-lighthouse",
+    "slug": "cijin-lighthouse",
+    "officialId": "Attraction_397000000A_000182",
+    "nameZh": "高雄燈塔(旗津旗后燈塔)",
+    "cityId": "city-kaohsiung",
+    "category": "culture",
+    "shortDescription": "登上旗後的燈塔，讀高雄港的航運歷史。",
+    "tags": [
+      "燈塔",
+      "海港"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2025-03-27",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 22.61552,
+      "lng": 120.26471
+    }
+  },
+  {
+    "id": "attraction-buddha-museum",
+    "slug": "buddha-museum",
+    "officialId": "Attraction_397000000A_000579",
+    "nameZh": "佛光山佛陀紀念館",
+    "cityId": "city-kaohsiung",
+    "category": "culture",
+    "shortDescription": "佛教文化、展覽與建築在這座紀念館相遇。",
+    "tags": [
+      "文化",
+      "建築"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2025-03-27",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 22.75729,
+      "lng": 120.44032
+    }
+  },
+  {
+    "id": "attraction-weiwuying-arts-center",
+    "slug": "weiwuying-arts-center",
+    "officialId": "Attraction_397000000A_000247",
+    "nameZh": "衛武營國家藝術文化中心",
+    "cityId": "city-kaohsiung",
+    "category": "arts",
+    "shortDescription": "從建築曲線走進表演場館，感受高雄的藝文生活。",
+    "tags": [
+      "表演",
+      "建築"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2025-03-27",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 22.623,
+      "lng": 120.34244
+    }
+  },
+  {
+    "id": "attraction-qixingtan-coast",
+    "slug": "qixingtan-coast",
+    "officialId": "Attraction_376550000A_001190",
+    "nameZh": "七星潭海岸風景特定區",
+    "cityId": "city-hualien",
+    "category": "coast",
+    "shortDescription": "礫石海灣與太平洋相接，山的輪廓一路延伸。",
+    "tags": [
+      "海岸",
+      "礫石"
+    ],
+    "coverMediaId": "photo-qixingtan",
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2026-08-25",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 24.03143,
+      "lng": 121.62718
+    }
+  },
+  {
+    "id": "attraction-qingshui-cliffs",
+    "slug": "qingshui-cliffs",
+    "officialId": "Attraction_376550000A_001176",
+    "nameZh": "清水斷崖",
+    "cityId": "city-hualien",
+    "category": "coast",
+    "shortDescription": "近乎垂直的斷崖，沿著太平洋海岸展開。",
+    "tags": [
+      "海岸",
+      "斷崖"
+    ],
+    "coverMediaId": "photo-qingshui-cliffs",
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2026-08-06",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 24.21889,
+      "lng": 121.69306
+    }
+  },
+  {
+    "id": "attraction-pine-garden",
+    "slug": "pine-garden",
+    "officialId": "Attraction_376550000A_000012",
+    "nameZh": "松園別館",
+    "cityId": "city-hualien",
+    "category": "culture",
+    "shortDescription": "松林環繞的歷史建築，望向美崙溪與花蓮港。",
+    "tags": [
+      "歷史建築",
+      "藝文"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2026-08-06",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 23.98287,
+      "lng": 121.61551
+    }
+  },
+  {
+    "id": "attraction-danongdafu-forest",
+    "slug": "danongdafu-forest",
+    "officialId": "Attraction_376550000A_000293",
+    "nameZh": "大農大富平地森林園區",
+    "cityId": "city-hualien",
+    "category": "nature",
+    "shortDescription": "在開闊的人造林間，感受花東縱谷的山線。",
+    "tags": [
+      "森林",
+      "自行車"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2026-08-25",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 23.61456,
+      "lng": 121.41592
+    }
+  },
+  {
+    "id": "attraction-sanxiantai",
+    "slug": "sanxiantai",
+    "officialId": "Attraction_376540000A_000333",
+    "nameZh": "三仙台風景區",
+    "cityId": "city-taitung",
+    "category": "coast",
+    "shortDescription": "東海岸的島嶼與海蝕地景，勾出臺東的海岸線。",
+    "tags": [
+      "海岸",
+      "島嶼"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2026-06-24",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 23.12331,
+      "lng": 121.40826
+    }
+  },
+  {
+    "id": "attraction-zhiben-forest",
+    "slug": "zhiben-forest",
+    "officialId": "Attraction_376540000A_000283",
+    "nameZh": "知本國家森林遊樂區",
+    "cityId": "city-taitung",
+    "category": "trail",
+    "shortDescription": "沿著知本溪附近的森林步道，認識亞熱帶林相。",
+    "tags": [
+      "森林",
+      "步道"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2026-03-24",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 22.68776,
+      "lng": 120.99229
+    }
+  },
+  {
+    "id": "attraction-luye-highland",
+    "slug": "luye-highland",
+    "officialId": "Attraction_376540000A_000450",
+    "nameZh": "鹿野高台",
+    "cityId": "city-taitung",
+    "category": "nature",
+    "shortDescription": "從高台俯瞰卑南溪谷與周邊田野。",
+    "tags": [
+      "高台",
+      "山景"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2026-03-29",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 22.91646,
+      "lng": 121.12156
+    }
+  },
+  {
+    "id": "attraction-taitung-forest-park",
+    "slug": "taitung-forest-park",
+    "officialId": "Attraction_376540000A_000454",
+    "nameZh": "臺東森林公園",
+    "cityId": "city-taitung",
+    "category": "leisure",
+    "shortDescription": "森林、湖泊與河口濕地，交會在臺東市區旁。",
+    "tags": [
+      "公園",
+      "森林"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2026-08-05",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 22.76857,
+      "lng": 121.15599
+    }
+  },
+  {
+    "id": "attraction-taipingshan-forest",
+    "slug": "taipingshan-forest",
+    "officialId": "Attraction_345040000G_000001",
+    "nameZh": "太平山國家森林遊樂區",
+    "cityId": "city-yilan",
+    "category": "nature",
+    "shortDescription": "森林鐵道、高山湖泊與巨木，串起太平山的林業記憶。",
+    "tags": [
+      "森林",
+      "山景"
+    ],
+    "coverMediaId": "photo-taipingshan-forest",
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2026-10-29",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 24.5574676798311,
+      "lng": 121.49949962026885
+    }
+  },
+  {
+    "id": "attraction-lanyang-museum",
+    "slug": "lanyang-museum",
+    "officialId": "Attraction_376420000A_000321",
+    "nameZh": "蘭陽博物館",
+    "cityId": "city-yilan",
+    "category": "arts",
+    "shortDescription": "從自然環境到地方文化，在博物館裡認識宜蘭。",
+    "tags": [
+      "博物館",
+      "建築"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2026-08-25",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 24.86866,
+      "lng": 121.83274
+    }
+  },
+  {
+    "id": "attraction-dongshan-river-park",
+    "slug": "dongshan-river-park",
+    "officialId": "Attraction_376420000A_000258",
+    "nameZh": "冬山河親水公園",
+    "cityId": "city-yilan",
+    "category": "leisure",
+    "shortDescription": "沿著冬山河畔，留一段親水與散步的時間。",
+    "tags": [
+      "河岸",
+      "公園"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2026-09-21",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 24.67299,
+      "lng": 121.81581
+    }
+  },
+  {
+    "id": "attraction-luodong-forestry-park",
+    "slug": "luodong-forestry-park",
+    "officialId": "Attraction_376420000A_000426",
+    "nameZh": "羅東林業文化園區",
+    "cityId": "city-yilan",
+    "category": "culture",
+    "shortDescription": "從貯木池與林業遺跡，回望羅東的產業歷史。",
+    "tags": [
+      "林業",
+      "鐵道"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2026-09-21",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 24.68193,
+      "lng": 121.77225
+    }
+  },
+  {
+    "id": "attraction-alishan-forest",
+    "slug": "alishan-forest",
+    "officialId": "Attraction_345040000G_000012",
+    "nameZh": "阿里山國家森林遊樂區",
+    "cityId": "city-chiayi-county",
+    "category": "nature",
+    "shortDescription": "森林鐵道、神木與山景，構成阿里山的旅行線索。",
+    "tags": [
+      "森林",
+      "山景"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2026-10-29",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 23.50881989610119,
+      "lng": 120.80199592702066
+    }
+  },
+  {
+    "id": "attraction-fenqihu-old-street",
+    "slug": "fenqihu-old-street",
+    "officialId": "Attraction_A15010800H_000157",
+    "nameZh": "奮起湖老街",
+    "cityId": "city-chiayi-county",
+    "category": "urban",
+    "shortDescription": "順著鐵道聚落的街巷，走進奮起湖的老街。",
+    "tags": [
+      "老街",
+      "鐵道"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2026-10-22",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 23.50511,
+      "lng": 120.69495
+    }
+  },
+  {
+    "id": "attraction-aogu-wetlands",
+    "slug": "aogu-wetlands",
+    "officialId": "Attraction_345040000G_020020",
+    "nameZh": "鰲鼓濕地森林園區",
+    "cityId": "city-chiayi-county",
+    "category": "nature",
+    "shortDescription": "在昔日農場形成的濕地，觀察水鳥與地景變化。",
+    "tags": [
+      "濕地",
+      "賞鳥"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2026-10-29",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 23.50798418017336,
+      "lng": 120.16060539028231
+    }
+  },
+  {
+    "id": "attraction-southern-palace-museum",
+    "slug": "southern-palace-museum",
+    "officialId": "Attraction_376500000A_000025",
+    "nameZh": "國立故宮博物院南部院區",
+    "cityId": "city-chiayi-county",
+    "category": "arts",
+    "shortDescription": "在嘉義的博物館，從展覽與建築展開文化旅程。",
+    "tags": [
+      "博物館",
+      "文物"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2022-02-08",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 23.47278,
+      "lng": 120.2927
+    }
+  },
+  {
+    "id": "attraction-penghu-cross-sea-bridge",
+    "slug": "penghu-cross-sea-bridge",
+    "officialId": "Attraction_A15010200H_000111",
+    "nameZh": "澎湖跨海大橋",
+    "cityId": "city-penghu",
+    "category": "coast",
+    "shortDescription": "橋梁跨越白沙與西嶼之間的水道，連起島嶼旅程。",
+    "tags": [
+      "海景",
+      "橋梁"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2023-10-30",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 23.64831,
+      "lng": 119.54639
+    }
+  },
+  {
+    "id": "attraction-erkan-village",
+    "slug": "erkan-village",
+    "officialId": "Attraction_A15010200H_000115",
+    "nameZh": "二崁傳統聚落保存區",
+    "cityId": "city-penghu",
+    "category": "culture",
+    "shortDescription": "走進修復後的傳統聚落，認識澎湖的古厝與生活。",
+    "tags": [
+      "聚落",
+      "古厝"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2023-10-30",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 23.604503,
+      "lng": 119.518853
+    }
+  },
+  {
+    "id": "attraction-double-heart-stone-weir",
+    "slug": "double-heart-stone-weir",
+    "officialId": "Attraction_A15010200H_000128",
+    "nameZh": "雙心石滬",
+    "cityId": "city-penghu",
+    "category": "culture",
+    "shortDescription": "以玄武岩與珊瑚礁砌成的石滬，留下漁業智慧。",
+    "tags": [
+      "石滬",
+      "海岸"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2023-10-30",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 23.22022,
+      "lng": 119.44697
+    }
+  },
+  {
+    "id": "attraction-duxing-ten-village",
+    "slug": "duxing-ten-village",
+    "officialId": "Attraction_A15010200H_000032",
+    "nameZh": "篤行十村",
+    "cityId": "city-penghu",
+    "category": "urban",
+    "shortDescription": "在舊眷村的木造宿舍之間，閱讀地方生活記憶。",
+    "tags": [
+      "眷村",
+      "街區"
+    ],
+    "sourceUrl": "https://data.gov.tw/dataset/7777",
+    "sourceUpdatedAt": "2026-02-03",
+    "lastVerifiedAt": "2026-10-29",
+    "coordinates": {
+      "lat": 23.57063,
+      "lng": 119.57746
+    }
+  }
+]

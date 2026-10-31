@@ -1,0 +1,12 @@
+h1, h2, h3, p { overflow-wrap: anywhere; }
+h1, h2, h3 { margin-top: 0; color: var(--text-primary); }
+h1, h2 { font-family: "Noto Serif TC", serif; font-weight: 500; letter-spacing: .015em; }
+h3 { font-family: "Noto Serif TC", serif; font-weight: 600; }
+p { line-height: 1.75; }
+.section-heading h2 { margin: 20px 0 0; max-width: 16em; font-size: clamp(28px, 3.2vw, 40px); line-height: 1.3; }
+.section-heading__description { max-width: 38ch; margin: 24px 0 0; color: var(--text-secondary); font-size: 16px; line-height: 1.8; }
+.section-heading__number { display: inline-flex; align-items: center; justify-content: center; width: 25px; height: 25px; border: 1px solid currentColor; border-radius: 50%; font-family: "DM Serif Display", serif; font-size: 11px; letter-spacing: 0; }
+.section-heading--center { text-align: center; }
+.section-heading--center .eyebrow { justify-content: center; }
+.section-heading--center h2, .section-heading--center .section-heading__description { margin-inline: auto; }
+@media (max-width: 767px) { .section-heading h2 { margin-top: 16px; font-size: 28px; line-height: 1.35; } .section-heading__description { margin-top: 16px; font-size: 16px; line-height: 1.7; } }

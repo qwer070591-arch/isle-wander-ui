@@ -1,0 +1,127 @@
+{
+  "attraction-shifen-waterfall": {
+    "address": "新北市平溪區乾坑10號"
+  },
+  "attraction-yingge-ceramics-museum": {
+    "address": "新北市鶯歌區文化路200號"
+  },
+  "attraction-jiufen-old-street": {
+    "address": "新北市瑞芳區基山街(九份老街)"
+  },
+  "attraction-yehliu-geopark": {
+    "address": "新北市萬里區野柳村港東路167-1號"
+  },
+  "attraction-national-taichung-theater": {
+    "address": "臺中市西屯區惠來路二段101號"
+  },
+  "attraction-gaomei-wetlands": {
+    "address": "臺中市清水區大甲溪出海口高美濕地"
+  },
+  "attraction-taichung-park": {
+    "address": "臺中市北區雙十路一段65號"
+  },
+  "attraction-wuling-forest": {
+    "address": "臺中市和平區武陵路3號"
+  },
+  "attraction-xitou-nature-education-area": {
+    "address": "南投縣鹿谷鄉森林巷9號",
+    "officialWebsite": "https://www.exfo.ntu.edu.tw/xitou/"
+  },
+  "attraction-qingjing-farm": {
+    "address": "南投縣仁愛鄉仁和路170號"
+  },
+  "attraction-checheng-station": {
+    "address": "南投縣水里鄉民權巷2號"
+  },
+  "attraction-aowanda-forest": {
+    "address": "南投縣仁愛鄉親愛村大安路153號",
+    "officialWebsite": "https://recreation.forest.gov.tw/Forest/RA?typ_id=0400001"
+  },
+  "attraction-chihkan-tower": {
+    "address": "臺南市中西區民族路二段212號"
+  },
+  "attraction-shennong-street": {
+    "address": "臺南市中西區神農街"
+  },
+  "attraction-anping-old-fort": {
+    "address": "臺南市安平區國勝路82號"
+  },
+  "attraction-chimei-museum": {
+    "address": "臺南市仁德區文華路二段66號"
+  },
+  "attraction-sizihwan-viewpoint": {
+    "address": "高雄市鼓山區西子灣觀景台"
+  },
+  "attraction-cijin-lighthouse": {
+    "address": "高雄市旗津區旗下巷34號"
+  },
+  "attraction-buddha-museum": {
+    "address": "高雄市大樹區統嶺路1號"
+  },
+  "attraction-weiwuying-arts-center": {
+    "address": "高雄市鳳山區三多一路1號"
+  },
+  "attraction-qixingtan-coast": {
+    "address": "花蓮縣新城鄉大漢村七星街32號"
+  },
+  "attraction-qingshui-cliffs": {
+    "address": "花蓮縣秀林鄉蘇花公路"
+  },
+  "attraction-pine-garden": {
+    "address": "花蓮縣花蓮市松園街65號"
+  },
+  "attraction-danongdafu-forest": {
+    "address": "花蓮縣光復鄉農場路31號"
+  },
+  "attraction-sanxiantai": {
+    "address": "臺東縣成功鎮三仙里基翬路74號"
+  },
+  "attraction-zhiben-forest": {
+    "address": "臺東縣卑南鄉溫泉村龍泉路290號"
+  },
+  "attraction-luye-highland": {
+    "address": "臺東縣鹿野鄉永安村高台路46號"
+  },
+  "attraction-taitung-forest-park": {
+    "address": "臺東縣臺東市華泰路300號"
+  },
+  "attraction-taipingshan-forest": {
+    "address": "宜蘭縣大同鄉太平巷58之1號",
+    "officialWebsite": "https://recreation.forest.gov.tw/Forest/RA?typ_id=0100001"
+  },
+  "attraction-lanyang-museum": {
+    "address": "宜蘭縣頭城鎮青雲路三段750號"
+  },
+  "attraction-dongshan-river-park": {
+    "address": "宜蘭縣五結鄉親河路二段2號"
+  },
+  "attraction-luodong-forestry-park": {
+    "address": "宜蘭縣羅東鎮中正北路118號"
+  },
+  "attraction-alishan-forest": {
+    "address": "嘉義縣阿里山鄉中正村59號",
+    "officialWebsite": "https://recreation.forest.gov.tw/Forest/RA?typ_id=0500001"
+  },
+  "attraction-fenqihu-old-street": {
+    "address": "嘉義縣竹崎鄉中和村奮起湖"
+  },
+  "attraction-aogu-wetlands": {
+    "address": "嘉義縣東石鄉鰲鼓村四股54號",
+    "officialWebsite": "https://recreation.forest.gov.tw/Forest/FP?typ_id=05001"
+  },
+  "attraction-southern-palace-museum": {
+    "address": "嘉義縣太保市嘉義縣太保市故宮大道888號"
+  },
+  "attraction-penghu-cross-sea-bridge": {
+    "address": "澎湖縣白沙鄉通西嶼鄉橋樑"
+  },
+  "attraction-erkan-village": {
+    "address": "澎湖縣西嶼鄉二崁傳統聚落保存區"
+  },
+  "attraction-double-heart-stone-weir": {
+    "address": "澎湖縣七美鄉雙心石滬"
+  },
+  "attraction-duxing-ten-village": {
+    "address": "澎湖縣馬公市新復路二巷22號"
+  }
+}

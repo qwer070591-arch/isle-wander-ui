@@ -1,0 +1,18 @@
+import { createApp } from 'vue'
+import { createPinia } from 'pinia'
+import App from './App.vue'
+import router from './router'
+import '@fontsource/dm-serif-display/latin-400.css'
+import './styles/tokens.css'
+import './styles/global.css'
+import './styles/typography.css'
+import './styles/utilities.css'
+import './styles/destinations.css'
+import './styles/explore.css'
+import './styles/attraction-detail.css'
+import './styles/favorites.css'
+import './styles/planner.css'
+import './styles/stitch-pages.css'
+import './styles/editorial-pages.css'
+
+createApp(App).use(createPinia()).use(router).mount('#app')

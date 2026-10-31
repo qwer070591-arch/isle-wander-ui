@@ -1,0 +1,31 @@
+:root {
+  --color-canvas: #f5f1e9;
+  --color-sand: #d7c9b6;
+  --color-forest: #566b5e;
+  --color-clay: #ae785f;
+  --color-ink: #282e2a;
+  --color-paper: #fff;
+  --color-muted: #5c625c;
+  --color-border: #b7b3a9;
+  --color-error: #9b3d35;
+  --surface-page: var(--color-canvas);
+  --surface-card: var(--color-paper);
+  --text-primary: var(--color-ink);
+  --text-secondary: var(--color-muted);
+  --action-primary-bg: var(--color-ink);
+  --action-primary-fg: var(--color-canvas);
+  --accent: var(--color-forest);
+  --border-default: var(--color-border);
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px;
+  --space-5: 20px; --space-6: 24px; --space-8: 32px; --space-10: 40px;
+  --space-12: 48px; --space-16: 64px; --space-20: 80px; --space-24: 96px; --space-32: 128px;
+  --radius-sm: 4px;
+  --shadow-float: 0 12px 32px rgb(40 46 42 / .12);
+  --container-width: 1320px;
+  --page-gutter: 20px;
+  --grid-gap: 12px;
+  --header-height: 64px;
+  --section-space: 72px;
+}
+@media (min-width: 768px) { :root { --page-gutter: 32px; --grid-gap: 20px; --header-height: 76px; --section-space: 96px; } }
+@media (min-width: 1280px) { :root { --page-gutter: 60px; --grid-gap: 24px; --header-height: 88px; --section-space: 112px; } }

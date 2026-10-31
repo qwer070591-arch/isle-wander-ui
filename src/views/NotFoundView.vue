@@ -1,0 +1,1 @@
+<template><div class="container interior-page"><p class="eyebrow"><span class="eyebrow__line"></span> LOST, THEN FOUND</p><p class="interior-page__status">404 / PAGE NOT FOUND</p><h1>這條路，暫時走不通。</h1><p class="interior-page__lead">頁面可能已搬移，或網址有誤。從首頁重新出發吧。</p><RouterLink class="button button--primary" to="/">返回首頁 <span aria-hidden="true">↗</span></RouterLink></div></template>

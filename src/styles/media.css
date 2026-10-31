@@ -1,0 +1,45 @@
+.media-slot { --sky: #b7c8bd; --haze: #cbd0bd; --far: #849c8a; --mid: #627e6e; --near: #334f46; position: relative; overflow: hidden; isolation: isolate; width: 100%; height: 100%; min-height: 160px; background: linear-gradient(160deg, var(--sky) 0%, var(--haze) 55%, #d1c3a9 100%); }
+.media-slot__illustration, .media-slot picture, .media-slot picture img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; }
+.media-slot picture img { object-fit: cover; object-position: center; }
+.media-slot--photo { background: var(--color-forest); }
+.media-slot--photo::after { background: linear-gradient(180deg, transparent 54%, rgb(10 25 21 / .58)); }
+.media-slot::after { content: ''; position: absolute; inset: 0; z-index: 7; background: linear-gradient(180deg, transparent 55%, rgb(21 37 30 / .32)); pointer-events: none; }
+.media-slot__sun { position: absolute; z-index: 1; top: 16%; left: 64%; width: 24%; aspect-ratio: 1; border-radius: 50%; background: #f6e9ca; filter: blur(1px); opacity: .82; box-shadow: 0 0 70px 40px rgb(245 237 211 / .3); }
+.media-slot__far, .media-slot__mid, .media-slot__near { position: absolute; inset-inline: -5%; bottom: -1%; height: 68%; transform-origin: bottom; }
+.media-slot__far { z-index: 2; background: var(--far); clip-path: polygon(0 72%, 15% 51%, 27% 62%, 47% 18%, 65% 60%, 78% 32%, 100% 66%, 100% 100%, 0 100%); opacity: .7; }
+.media-slot__mid { z-index: 3; height: 59%; background: var(--mid); clip-path: polygon(0 67%, 18% 40%, 39% 73%, 61% 20%, 78% 60%, 100% 37%, 100% 100%, 0 100%); opacity: .78; }
+.media-slot__near { z-index: 4; height: 40%; background: var(--near); clip-path: polygon(0 58%, 17% 75%, 35% 35%, 59% 67%, 80% 33%, 100% 55%, 100% 100%, 0 100%); }
+.media-slot__caption, .media-slot__note { position: absolute; z-index: 8; color: white; font-size: 10px; font-weight: 700; letter-spacing: .08em; line-height: 1.5; text-shadow: 0 1px 8px rgb(0 0 0 / .35); }
+.media-slot__caption { bottom: 22px; left: 22px; }
+.media-slot__note { top: 20px; right: 18px; padding: 6px 8px; background: rgb(40 46 42 / .65); text-shadow: none; }
+.media-slot--coast { --sky: #9fbfc0; --haze: #d4d4bf; --far: #7ca3a2; --mid: #587f80; --near: #3c6465; }
+.media-slot--coast .media-slot__far { height: 53%; clip-path: polygon(0 63%, 23% 55%, 39% 63%, 62% 60%, 100% 58%, 100% 100%, 0 100%); }
+.media-slot--coast .media-slot__mid { height: 43%; clip-path: polygon(0 70%, 19% 72%, 38% 68%, 64% 73%, 82% 60%, 100% 65%, 100% 100%, 0 100%); }
+.media-slot--coast .media-slot__near { height: 49%; clip-path: polygon(0 70%, 10% 62%, 22% 45%, 30% 49%, 45% 83%, 67% 89%, 100% 92%, 100% 100%, 0 100%); }
+.media-slot--forest { --sky: #a6b6a0; --haze: #c6cbac; --far: #84977a; --mid: #617962; --near: #354f3f; }
+.media-slot--forest .media-slot__sun { top: 13%; left: 34%; opacity: .6; }
+.media-slot--forest .media-slot__near { height: 65%; clip-path: polygon(0 24%, 9% 54%, 19% 11%, 31% 67%, 42% 25%, 56% 69%, 68% 9%, 80% 58%, 91% 18%, 100% 48%, 100% 100%, 0 100%); opacity: .92; }
+.media-slot--terracotta { --sky: #d2b7a1; --haze: #d7bda7; --far: #b68d77; --mid: #926d5d; --near: #62483e; }
+.media-slot--terracotta .media-slot__far { height: 60%; clip-path: polygon(0 71%, 0 25%, 22% 25%, 22% 58%, 32% 58%, 32% 10%, 55% 10%, 55% 61%, 70% 61%, 70% 33%, 100% 33%, 100% 100%, 0 100%); }
+.media-slot--terracotta .media-slot__mid { height: 45%; clip-path: polygon(0 56%, 15% 56%, 15% 36%, 38% 36%, 38% 73%, 53% 73%, 53% 15%, 82% 15%, 82% 66%, 100% 66%, 100% 100%, 0 100%); }
+.media-slot--terracotta .media-slot__near { height: 25%; clip-path: polygon(0 83%, 27% 55%, 50% 83%, 78% 41%, 100% 68%, 100% 100%, 0 100%); }
+.media-slot--lake { --sky: #a6bec0; --haze: #c9d2c2; --far: #8ba79a; --mid: #688b82; --near: #395c56; }
+.media-slot--lake .media-slot__near { height: 30%; clip-path: polygon(0 35%, 14% 38%, 27% 33%, 50% 39%, 73% 30%, 100% 36%, 100% 100%, 0 100%); opacity: .78; }
+.media-slot--islands { --sky: #a8c6c2; --haze: #e0d4b8; --far: #9bbab1; --mid: #698f87; --near: #496b62; }
+.media-slot--islands .media-slot__far { clip-path: polygon(0 77%, 14% 77%, 22% 52%, 30% 51%, 40% 75%, 60% 76%, 75% 42%, 88% 40%, 100% 76%, 100% 100%, 0 100%); }
+.media-slot--islands .media-slot__mid { clip-path: polygon(0 77%, 20% 75%, 32% 74%, 50% 79%, 76% 75%, 100% 74%, 100% 100%, 0 100%); }
+.media-slot--ridge { --sky: #c2c6ae; --haze: #dfd5b8; --far: #9aa88d; --mid: #6a8572; --near: #365b50; }
+.media-slot--architecture { --sky: #b6c2b0; --haze: #d7d0b7; --far: #887f68; --mid: #514d40; --near: #2f4037; }
+.media-slot--architecture .media-slot__sun { top: 12%; left: 18%; width: 26%; background: #e9e0c4; }
+.media-slot--architecture .media-slot__far { inset-inline: 8%; bottom: 0; height: 65%; opacity: 1; background: #c8bda9; clip-path: polygon(0 21%, 25% 0, 100% 0, 100% 100%, 0 100%); }
+.media-slot--architecture .media-slot__mid { inset-inline: 24% 7%; bottom: 8%; height: 45%; opacity: 1; background: #5b6655; clip-path: polygon(0 0, 85% 0, 85% 100%, 0 100%); }
+.media-slot--architecture .media-slot__near { inset-inline: 0; bottom: 0; height: 18%; background: #4a564a; clip-path: polygon(0 62%, 35% 20%, 100% 52%, 100% 100%, 0 100%); }
+.media-slot--interior { --sky: #d1c4ab; --haze: #e5dac4; --far: #a99679; --mid: #536f6a; --near: #554d42; }
+.media-slot--interior .media-slot__sun { top: 15%; left: 60%; width: 18%; background: #f6e7bd; }
+.media-slot--interior .media-slot__far { inset-inline: 0; bottom: 0; height: 100%; opacity: 1; background: #cfc0a7; clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+.media-slot--interior .media-slot__mid { inset-inline: 43% 13%; bottom: 18%; height: 64%; opacity: 1; background: linear-gradient(180deg, #a9c1b7 0%, #d8dfd0 60%, #698a85 61%, #4b7573 100%); clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); box-shadow: inset 10px 0 #766a58, inset -10px 0 #766a58; }
+.media-slot--interior .media-slot__near { inset-inline: 0; bottom: 0; height: 30%; background: #746859; clip-path: polygon(0 100%, 0 22%, 42% 22%, 42% 44%, 100% 44%, 100% 100%); }
+.media-slot--street { --sky: #d2b7a1; --haze: #d7bda7; --far: #b68d77; --mid: #926d5d; --near: #62483e; }
+.media-slot--street .media-slot__far { height: 74%; clip-path: polygon(0 0, 32% 0, 32% 78%, 58% 78%, 58% 12%, 100% 12%, 100% 100%, 0 100%); }
+.media-slot--street .media-slot__mid { height: 55%; clip-path: polygon(0 15%, 22% 15%, 22% 100%, 70% 100%, 70% 7%, 100% 7%, 100% 100%, 0 100%); }
+.media-slot--street .media-slot__near { height: 30%; clip-path: polygon(0 80%, 25% 55%, 48% 100%, 65% 45%, 100% 82%, 100% 100%, 0 100%); }
