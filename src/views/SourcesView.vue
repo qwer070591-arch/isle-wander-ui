@@ -13,7 +13,7 @@ const attractionCredits = [attractionMedia['photo-gaomei-wetland'], attractionMe
     <p class="interior-page__lead">本站使用已核對授權的實景照片、參照使用者 Stitch 概念圖製作的高解析度影像提案，以及原創 CSS 插畫。影像提案不是實際地點、旅宿或採訪攝影。</p>
     <div class="sources-page__content">
       <h2>首頁照片</h2>
-      <p>照片檔案使用 Wikimedia Commons 提供的縮圖；本站僅在畫面中依容器比例顯示裁切，未改動下載檔內容。照片的授權適用於照片本身。</p>
+      <p>照片來源為 Wikimedia Commons 提供的縮圖；本站另製作等比例縮放、WebP 轉碼版本，保留原構圖，畫面依容器比例顯示裁切。原作者、來源及授權如下。</p>
       <ul class="photo-credits">
         <li v-for="photo in homeCredits" :key="photo.sourceUrl">
           <strong>{{ photo.caption }}</strong> — 攝影：{{ photo.credit }}；
@@ -34,7 +34,7 @@ const attractionCredits = [attractionMedia['photo-gaomei-wetland'], attractionMe
       <p>官方資料中的 Images 欄位未作為本站圖片來源。景點實景照片使用上列六張已核對授權的影像；其餘卡片使用本站生成的影像提案。清水斷崖、七星潭、神農街使用首頁既有影像。</p>
       <h2>精選旅宿資料</h2>
       <p>精選旅宿的名稱、地址、登記字號及業者連結，摘自交通部觀光署的<a href="https://data.gov.tw/dataset/7780" target="_blank" rel="noopener noreferrer">旅館民宿－觀光資訊資料庫</a>。本站於 2026-10-31 取得資料，所下載檔案的更新時間為 2026-10-30；資料集標示<a href="https://data.gov.tw/licenses" target="_blank" rel="noopener noreferrer">政府資料開放授權條款－第 1 版</a>。本站依官方旅宿 ID 選出八筆，風格分類及短文由本站編輯；此選輯不代表觀光署推薦或背書。原始資料可能比即時營業資訊慢，預訂前請在<a href="https://www.taiwanstay.net.tw/TSA/web_page/TSA020100.jsp" target="_blank" rel="noopener noreferrer">觀光署旅宿網</a>按名稱或登記字號再次核對。本站沒有提供價格或空房資訊。</p>
-      <p>交通部觀光署（2026）《旅館民宿－觀光資訊資料庫》（2026-10-30 資料快照）。此開放資料依<a href="https://data.gov.tw/license" target="_blank" rel="noopener noreferrer">政府資料開放授權條款第 1 版</a>進行公眾釋出，使用者於遵守條款各項規定之前提下，得利用之。精選旅宿的八張照片均取自各旅宿紀錄的 Images 欄位，檔案未經修改，只依卡片比例顯示裁切。照片呈現資料集所列房型，不保證現在仍提供相同房型或陳設。個別攝影者未列於原始紀錄；若權利人對單張照片有疑義，請聯絡本站核對。</p>
+      <p>交通部觀光署（2026）《旅館民宿－觀光資訊資料庫》（2026-10-30 資料快照）。此開放資料依<a href="https://data.gov.tw/license" target="_blank" rel="noopener noreferrer">政府資料開放授權條款第 1 版</a>進行公眾釋出，使用者於遵守條款各項規定之前提下，得利用之。精選旅宿的八張照片均取自各旅宿紀錄的 Images 欄位；本站另製作等比例縮放、WebP 轉碼版本，保留原構圖，畫面依卡片比例顯示裁切。照片呈現資料集所列房型，不保證現在仍提供相同房型或陳設。個別攝影者未列於原始紀錄；若權利人對單張照片有疑義，請聯絡本站核對。</p>
       <ul class="photo-credits">
         <li v-for="stay in featuredStays" :key="stay.id"><strong>{{ stay.name }}・{{ stay.photo.label }}</strong> — 資料提供：交通部觀光署；<a :href="stay.photo.sourceUrl" target="_blank" rel="noopener noreferrer">原始照片</a> · <a href="https://data.gov.tw/license" target="_blank" rel="noopener noreferrer">政府資料開放授權條款第 1 版</a></li>
       </ul>

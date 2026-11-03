@@ -13,7 +13,7 @@ const attractionCount = computed(() => attractionCountByCity.get(props.city.id) 
 <template>
   <article class="city-card">
     <RouterLink class="city-card__link" :to="{ path: `/destinations/${city.slug}/`, query: returnQuery }" :aria-label="`探索${city.nameZh}，${attractionCount ? `已收錄 ${attractionCount} 個景點` : '城市概覽'}`">
-      <div class="city-card__media"><ConceptVisual v-if="cityConcepts[city.slug]" :visual="cityConcepts[city.slug]" /><MediaSlot v-else :art="city.art" :photo="city.cover" :show-note="false" /></div>
+      <div class="city-card__media"><ConceptVisual v-if="cityConcepts[city.slug]" :visual="cityConcepts[city.slug]" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1100px) 30vw, 24vw" /><MediaSlot v-else :art="city.art" :photo="city.cover" :show-note="false" /></div>
       <div class="city-card__body">
         <p class="city-card__meta">{{ regionName }} <span aria-hidden="true">·</span> {{ city.nameEn }}</p>
         <div class="city-card__title"><h3>{{ city.nameZh }}</h3><span v-if="index">{{ String(index).padStart(2, '0') }} / CITY NOTE</span></div>

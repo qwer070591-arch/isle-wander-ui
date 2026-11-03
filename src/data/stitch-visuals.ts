@@ -2,11 +2,14 @@
 // Neither source is verified location or lodging photography.
 import { attractions } from './attractions'
 // The 512px Stitch exports remain in the repository as references only.
-// Every displayed concept image resolves to a 1400px WebP, including corrected screenshot-like originals.
+// Concept images use responsive WebP sizes; the original 1400px files remain the large-screen source.
 const generatedFiles = import.meta.glob('../assets/generated/*.webp', { eager: true, query: '?url', import: 'default' }) as Record<string, string>
 const smallFiles = import.meta.glob('../assets/generated/small/*.webp', { eager: true, query: '?url', import: 'default' }) as Record<string, string>
+const mediumFiles = import.meta.glob('../assets/generated/medium/*.webp', { eager: true, query: '?url', import: 'default' }) as Record<string, string>
 const smallBySource = new Map(Object.entries(generatedFiles).map(([path, src]) => [src, smallFiles[path.replace('/generated/', '/generated/small/')]]))
+const mediumBySource = new Map(Object.entries(generatedFiles).map(([path, src]) => [src, mediumFiles[path.replace('/generated/', '/generated/medium/')]]))
 export const smallConceptImage = (src: string) => smallBySource.get(src)
+export const mediumConceptImage = (src: string) => mediumBySource.get(src)
 const generated = (name: string) => generatedFiles[`../assets/generated/${name}.webp`] ?? ''
 const highResolutionAlternates: Record<string, string> = {
   'destinations-01': 'stitch-clean-explore-01',

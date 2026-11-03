@@ -26,7 +26,7 @@ function onKeydown(event: KeyboardEvent) {
 <template>
   <section class="container concept-gallery" aria-labelledby="concept-gallery-title">
     <div class="concept-gallery__head"><div><p class="eyebrow">VISUAL NOTES</p><h2 id="concept-gallery-title">{{ title }}</h2></div><p>{{ description ?? '影像提案，非實景攝影。' }} <RouterLink to="/sources/">影像來源 ↗</RouterLink></p></div>
-    <div class="concept-gallery__grid"><button v-for="(item, index) in items" :key="item.src" type="button" :aria-label="`放大檢視${item.title}`" @click="open(index)"><ConceptVisual :visual="item" /><span>{{ item.title }} <span aria-hidden="true">↗</span></span></button></div>
+    <div class="concept-gallery__grid"><button v-for="(item, index) in items" :key="item.src" type="button" :aria-label="`放大檢視${item.title}`" @click="open(index)"><ConceptVisual :visual="item" :sizes="index === items.length - 1 ? '(max-width: 767px) calc(100vw - 32px), 30vw' : '(max-width: 767px) calc((100vw - 42px) / 2), 30vw'" /><span>{{ item.title }} <span aria-hidden="true">↗</span></span></button></div>
     <dialog ref="dialog" class="concept-gallery__dialog" aria-label="影像預覽" @close="selectedIndex = null" @keydown="onKeydown">
       <button type="button" class="concept-gallery__close" aria-label="關閉影像預覽" @click="close">×</button>
       <figure v-if="selected"><img :src="selected.src" :alt="selected.title" /><figcaption aria-live="polite">{{ selected.title }}</figcaption></figure>

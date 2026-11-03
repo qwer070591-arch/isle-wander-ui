@@ -2,12 +2,13 @@
 import { ref } from 'vue'
 import type { PhotoAsset } from '../../types/content'
 
-withDefaults(defineProps<{ art?: string; caption?: string; showNote?: boolean; photo?: PhotoAsset; loading?: 'eager' | 'lazy'; priority?: 'high' | 'auto' }>(), {
+withDefaults(defineProps<{ art?: string; caption?: string; showNote?: boolean; photo?: PhotoAsset; loading?: 'eager' | 'lazy'; priority?: 'high' | 'auto'; sizes?: string }>(), {
   art: 'ridge',
   caption: '',
   showNote: true,
   loading: 'lazy',
   priority: 'auto',
+  sizes: '100vw',
 })
 const imageFailed = ref(false)
 </script>
@@ -22,7 +23,7 @@ const imageFailed = ref(false)
     </div>
     <picture v-if="photo && !imageFailed">
       <source v-if="photo.mobileSrc" media="(max-width: 767px)" :srcset="photo.mobileSrc" />
-      <img :src="photo.src" :alt="photo.alt" :width="photo.width" :height="photo.height" :loading="loading" :fetchpriority="priority" decoding="async" @error="imageFailed = true" />
+      <img :src="photo.src" :srcset="photo.mobileSrc ? `${photo.mobileSrc} 960w, ${photo.src} ${photo.width}w` : undefined" :sizes="sizes" :alt="photo.alt" :width="photo.width" :height="photo.height" :loading="loading" :fetchpriority="priority" decoding="async" @error="imageFailed = true" />
     </picture>
     <span v-if="photo && !imageFailed" class="media-slot__caption">{{ photo.caption }}</span>
     <span v-else-if="caption" class="media-slot__caption">{{ caption }}</span>

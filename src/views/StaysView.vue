@@ -23,6 +23,7 @@ const visibleStays = computed(() => {
 })
 const styleName = (id: string) => stayStyles.find(item => item.id === id)?.label ?? ''
 const mapUrl = (address: string) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`
+const stayImageSizes = '(max-width: 767px) calc(100vw - 32px), (max-width: 1100px) calc((100vw - 64px) / 2), 540px'
 async function clearFilters() {
   search.value = ''
   await selectStyle('all')
@@ -60,7 +61,7 @@ async function selectStyle(id: string) {
       <label class="stays-tools__search" for="stay-search"><span>尋找旅宿或地點</span><input id="stay-search" v-model="search" type="search" placeholder="例如：澎湖、鹿野、民宿名稱" autocomplete="off" /></label>
       <div class="stays-collection__grid">
         <article v-for="(stay, index) in visibleStays" :key="stay.id" class="stay-idea">
-          <div class="stay-idea__image"><img :src="stay.photo.src" :alt="`${stay.name}：${stay.photo.label}的資料照片`" :loading="index < 2 ? 'eager' : 'lazy'" decoding="async" /><a class="stay-idea__image-label" :href="stay.photo.sourceUrl" target="_blank" rel="noopener noreferrer" :aria-label="`查看${stay.name}${stay.photo.label}的原始照片`">實景 · {{ stay.photo.label }} ↗</a></div>
+          <div class="stay-idea__image"><img :src="stay.photo.src" :srcset="`${stay.photo.smallSrc} 720w, ${stay.photo.src} 1200w`" :sizes="stayImageSizes" :width="stay.photo.width" :height="stay.photo.height" :alt="`${stay.name}：${stay.photo.label}的資料照片`" loading="lazy" decoding="async" /><a class="stay-idea__image-label" :href="stay.photo.sourceUrl" target="_blank" rel="noopener noreferrer" :aria-label="`查看${stay.name}${stay.photo.label}的原始照片`">實景 · {{ stay.photo.label }} ↗</a></div>
           <div class="stay-idea__body">
             <span class="stay-idea__number">{{ String(index + 1).padStart(2, '0') }} / {{ styleName(stay.style) }} · {{ stay.city }}{{ stay.town }}</span>
             <h3>{{ stay.name }}</h3>

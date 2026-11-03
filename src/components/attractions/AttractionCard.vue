@@ -22,7 +22,7 @@ const art = artByCategory[props.attraction.category]
 <template>
   <article class="attraction-card">
     <RouterLink class="attraction-card__link" :to="{ path: `/attractions/${attraction.slug}/`, query: returnTo ? { from: returnTo } : undefined }" :aria-label="`查看${attraction.nameZh}的景點介紹`">
-      <div class="attraction-card__media"><ConceptVisual v-if="concept && !photo" :visual="concept" /><MediaSlot v-else :art="art" :photo="photo" :show-note="false" /></div>
+      <div class="attraction-card__media"><ConceptVisual v-if="concept && !photo" :visual="concept" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1099px) 46vw, 31vw" /><MediaSlot v-else :art="art" :photo="photo" :show-note="false" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1099px) 46vw, 31vw" /></div>
       <div class="attraction-card__body">
         <p class="attraction-card__meta">{{ cityById.get(attraction.cityId)?.nameZh }} <span aria-hidden="true">·</span> {{ categoryById.get(attraction.category)?.name }}</p>
         <h3>{{ attraction.nameZh }}</h3>

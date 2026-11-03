@@ -11,7 +11,7 @@ import SectionHeading from './SectionHeading.vue'
       <div class="destinations-grid">
         <article v-for="(destination, index) in destinations" :key="destination.id" class="destination-card" :class="`destination-card--${index}`">
           <RouterLink :to="`/destinations/${destination.slug}/`" :aria-label="`探索${destination.name}`">
-            <div class="destination-card__visual"><MediaSlot :art="destination.art" :photo="destination.photo" loading="lazy" /><span class="destination-card__num">0{{ index + 1 }}</span></div>
+            <div class="destination-card__visual"><MediaSlot :art="destination.art" :photo="destination.photo" loading="lazy" :sizes="index === 0 ? '(max-width: 767px) calc(100vw - 32px), 58vw' : '(max-width: 767px) calc(100vw - 32px), 42vw'" /><span class="destination-card__num">0{{ index + 1 }}</span></div>
             <div class="destination-card__body"><p class="eyebrow">{{ destination.city }} <span>·</span> {{ destination.category }}</p><h3>{{ destination.name }}</h3><p>{{ destination.summary }}</p><span class="card-link">走進這座城市 <span aria-hidden="true">↗</span></span></div>
           </RouterLink>
         </article>

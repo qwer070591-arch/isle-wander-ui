@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { smallConceptImage, type ConceptImage } from '../../data/stitch-visuals'
+import { mediumConceptImage, smallConceptImage, type ConceptImage } from '../../data/stitch-visuals'
 
 const props = withDefaults(defineProps<{ visual: ConceptImage; loading?: 'lazy' | 'eager'; sizes?: string }>(), {
   loading: 'lazy',
@@ -8,12 +8,13 @@ const props = withDefaults(defineProps<{ visual: ConceptImage; loading?: 'lazy' 
 })
 const srcset = computed(() => {
   const small = smallConceptImage(props.visual.src)
-  return small ? `${small} 900w, ${props.visual.src} 1400w` : undefined
+  const medium = mediumConceptImage(props.visual.src)
+  return small ? `${small} 900w, ${medium ? `${medium} 1200w, ` : ''}${props.visual.src} 1400w` : undefined
 })
 </script>
 
 <template>
   <div class="concept-visual">
-    <img :src="visual.src" :srcset="srcset" :sizes="sizes" :alt="visual.title" :loading="loading" decoding="async" />
+    <img :src="visual.src" :srcset="srcset" :sizes="sizes" :alt="visual.title" width="1400" height="1050" :loading="loading" decoding="async" />
   </div>
 </template>
