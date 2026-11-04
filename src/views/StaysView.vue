@@ -8,6 +8,7 @@ const route = useRoute()
 const router = useRouter()
 const resultsHeading = ref<HTMLElement | null>(null)
 const search = ref('')
+const failedImages = ref<string[]>([])
 const selectedStyle = computed(() => {
   const value = route.query.style
   return typeof value === 'string' && stayStyles.some(item => item.id === value) ? value : 'all'
@@ -61,7 +62,7 @@ async function selectStyle(id: string) {
       <label class="stays-tools__search" for="stay-search"><span>尋找旅宿或地點</span><input id="stay-search" v-model="search" type="search" placeholder="例如：澎湖、鹿野、民宿名稱" autocomplete="off" /></label>
       <div class="stays-collection__grid">
         <article v-for="(stay, index) in visibleStays" :key="stay.id" class="stay-idea">
-          <div class="stay-idea__image"><img :src="stay.photo.src" :srcset="`${stay.photo.smallSrc} 720w, ${stay.photo.src} 1200w`" :sizes="stayImageSizes" :width="stay.photo.width" :height="stay.photo.height" :alt="`${stay.name}：${stay.photo.label}的資料照片`" loading="lazy" decoding="async" /><a class="stay-idea__image-label" :href="stay.photo.sourceUrl" target="_blank" rel="noopener noreferrer" :aria-label="`查看${stay.name}${stay.photo.label}的原始照片`">實景 · {{ stay.photo.label }} ↗</a></div>
+          <div class="stay-idea__image"><img v-if="!failedImages.includes(stay.id)" :src="stay.photo.src" :srcset="`${stay.photo.smallSrc} 720w, ${stay.photo.src} 1200w`" :sizes="stayImageSizes" :width="stay.photo.width" :height="stay.photo.height" :alt="`${stay.name}：${stay.photo.label}的資料照片`" :loading="index < 2 ? 'eager' : 'lazy'" decoding="async" @error="failedImages.push(stay.id)" /><span v-else class="stay-idea__image-fallback" role="img" :aria-label="`${stay.name}的房型照片暫時無法載入`">房型照片暫時無法載入</span><a class="stay-idea__image-label" :href="stay.photo.sourceUrl" target="_blank" rel="noopener noreferrer" :aria-label="`查看${stay.name}${stay.photo.label}的原始照片`">實景 · {{ stay.photo.label }} ↗</a></div>
           <div class="stay-idea__body">
             <span class="stay-idea__number">{{ String(index + 1).padStart(2, '0') }} / {{ styleName(stay.style) }} · {{ stay.city }}{{ stay.town }}</span>
             <h3>{{ stay.name }}</h3>

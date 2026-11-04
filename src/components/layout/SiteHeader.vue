@@ -20,14 +20,14 @@ const links = [
 function closeMenu(restoreFocus = true) {
   if (!open.value) return
   open.value = false
-  document.body.classList.remove('nav-open')
+  document.documentElement.classList.remove('nav-open')
   if (restoreFocus) nextTick(() => menuButton.value?.focus())
 }
 
 async function toggleMenu() {
   if (open.value) { closeMenu(); return }
   open.value = true
-  document.body.classList.add('nav-open')
+  document.documentElement.classList.add('nav-open')
   await nextTick()
   drawer.value?.querySelector<HTMLElement>('a, button')?.focus()
 }
@@ -45,7 +45,7 @@ function onKeydown(event: KeyboardEvent) {
 }
 
 watch(() => route.fullPath, () => closeMenu(false))
-onBeforeUnmount(() => document.body.classList.remove('nav-open'))
+onBeforeUnmount(() => document.documentElement.classList.remove('nav-open'))
 </script>
 
 <template>

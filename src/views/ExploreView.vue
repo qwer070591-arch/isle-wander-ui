@@ -91,7 +91,7 @@ const photoCount = attractions.filter((item) => item.coverMediaId).length
       <div class="explore-listing">
       <div class="explore-results-head"><div><p class="eyebrow">THE EDITED SELECTION</p><h2>探索清單</h2><p class="explore-results-count" role="status" aria-live="polite">找到 {{ results.length }} 個景點{{ hasFilters ? ' · 已套用搜尋或篩選' : '' }}</p></div><button v-if="hasFilters" type="button" class="explore-reset" @click="reset">清除所有條件 <span aria-hidden="true">×</span></button></div>
       <p v-if="invalidQuery" class="explore-notice" role="status">網址中的縣市或類型無效，已忽略該條件。可從上方重新選擇。</p>
-      <div v-if="results.length" class="attraction-grid"><AttractionCard v-for="item in results" :key="item.id" :attraction="item" :return-to="route.fullPath" /></div>
+      <div v-if="results.length" class="attraction-grid"><AttractionCard v-for="(item, index) in results" :key="item.id" :attraction="item" :return-to="route.fullPath" :loading="index < 2 ? 'eager' : 'lazy'" /></div>
       <div v-else class="explore-empty"><span class="eyebrow">NO MATCHES YET</span><h2>還沒有找到符合的景點</h2><p>換個關鍵字或清除條件，從其他地方繼續探索。</p><button type="button" class="button button--primary" @click="reset">顯示全部景點</button></div>
       <aside class="explore-source"><span class="eyebrow">ABOUT THE DATA</span><p>本頁是從交通部觀光署「景點－觀光資訊資料庫」精選的靜態資料。資訊可能變動，行前請以官方資料為準。影像包含已核對授權的實景照片及氛圍提案；提案並非景點實拍。</p><RouterLink class="text-link" to="/sources/">查看資料與媒體來源 <span aria-hidden="true">↗</span></RouterLink></aside>
       </div>

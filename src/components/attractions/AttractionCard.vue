@@ -8,7 +8,7 @@ import { attractionConcepts } from '../../data/stitch-visuals'
 import FavoriteButton from '../common/FavoriteButton.vue'
 import AddToTripButton from '../common/AddToTripButton.vue'
 
-const props = defineProps<{ attraction: Attraction; returnTo?: string }>()
+const props = withDefaults(defineProps<{ attraction: Attraction; returnTo?: string; loading?: 'eager' | 'lazy' }>(), { loading: 'lazy' })
 const emit = defineEmits<{ favoriteChange: [active: boolean] }>()
 const artByCategory: Record<Attraction['category'], string> = {
   nature: 'forest', coast: 'coast', trail: 'ridge', culture: 'terracotta',
@@ -22,7 +22,7 @@ const art = artByCategory[props.attraction.category]
 <template>
   <article class="attraction-card">
     <RouterLink class="attraction-card__link" :to="{ path: `/attractions/${attraction.slug}/`, query: returnTo ? { from: returnTo } : undefined }" :aria-label="`查看${attraction.nameZh}的景點介紹`">
-      <div class="attraction-card__media"><ConceptVisual v-if="concept && !photo" :visual="concept" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1099px) 46vw, 31vw" /><MediaSlot v-else :art="art" :photo="photo" :show-note="false" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1099px) 46vw, 31vw" /></div>
+      <div class="attraction-card__media"><ConceptVisual v-if="concept && !photo" :visual="concept" :loading="loading" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1099px) 46vw, 31vw" /><MediaSlot v-else :art="art" :photo="photo" :loading="loading" :show-note="false" sizes="(max-width: 767px) calc(100vw - 32px), (max-width: 1099px) 46vw, 31vw" /></div>
       <div class="attraction-card__body">
         <p class="attraction-card__meta">{{ cityById.get(attraction.cityId)?.nameZh }} <span aria-hidden="true">·</span> {{ categoryById.get(attraction.category)?.name }}</p>
         <h3>{{ attraction.nameZh }}</h3>

@@ -1,7 +1,7 @@
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { margin: 0; min-width: 320px; background: var(--surface-page); color: var(--text-primary); font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif; -webkit-font-smoothing: antialiased; }
-body.nav-open { overflow: hidden; }
+html.nav-open { overflow: hidden; }
 button, input { font: inherit; }
 button { cursor: pointer; }
 img, svg { display: block; max-width: 100%; }

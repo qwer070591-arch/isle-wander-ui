@@ -94,7 +94,7 @@ const cityReturnQuery = computed(() => queryFor())
             <p>{{ region.description }}</p>
           </div>
           <div class="city-grid">
-            <DestinationCityCard v-for="(city, cityIndex) in filteredCities.filter((item) => item.regionId === region.id)" :key="city.id" :city="city" :region-name="region.name" :index="cityIndex + 1" :return-query="cityReturnQuery" />
+            <DestinationCityCard v-for="(city, cityIndex) in filteredCities.filter((item) => item.regionId === region.id)" :key="city.id" :city="city" :region-name="region.name" :index="cityIndex + 1" :return-query="cityReturnQuery" :loading="region.id === visibleRegions[0]?.id && cityIndex < 2 ? 'eager' : 'lazy'" />
           </div>
         </section>
       </div>
