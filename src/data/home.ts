@@ -1,13 +1,13 @@
 import type { Destination, Mood, Region, StayConcept } from '../types/content'
-import { homePhotos } from './media'
+import { homePhotos, regionPhotos } from './media'
 
 // 編輯分組；22 縣市各歸屬一個主要區域，不代表行政區劃。
 export const regions: Region[] = [
-  { id: 'north', name: '北台灣', english: 'THE NORTH', description: '山城、海岬與城市的日常。', cities: ['臺北市', '新北市', '基隆市', '桃園市', '新竹市', '新竹縣', '宜蘭縣'], art: 'ridge' },
-  { id: 'central', name: '中台灣', english: 'THE HEARTLAND', description: '循著山線，慢慢走進島嶼腹地。', cities: ['苗栗縣', '臺中市', '彰化縣', '南投縣', '雲林縣'], art: 'forest' },
-  { id: 'south', name: '南台灣', english: 'THE SOUTH', description: '老街、陽光與有溫度的街角。', cities: ['嘉義市', '嘉義縣', '臺南市', '高雄市', '屏東縣'], art: 'street' },
-  { id: 'east', name: '東台灣', english: 'THE EAST', description: '讓山與海，重新定義一日的長度。', cities: ['花蓮縣', '臺東縣'], art: 'coast' },
-  { id: 'islands', name: '離島', english: 'THE ISLANDS', description: '渡海之後，遇見另一種時間感。', cities: ['澎湖縣', '金門縣', '連江縣'], art: 'islands' },
+  { id: 'north', name: '北台灣', english: 'THE NORTH', description: '山城、海岬與城市的日常。', cities: ['臺北市', '新北市', '基隆市', '桃園市', '新竹市', '新竹縣', '宜蘭縣'], art: 'ridge', photo: regionPhotos.north },
+  { id: 'central', name: '中台灣', english: 'THE HEARTLAND', description: '循著山線，慢慢走進島嶼腹地。', cities: ['苗栗縣', '臺中市', '彰化縣', '南投縣', '雲林縣'], art: 'forest', photo: regionPhotos.central },
+  { id: 'south', name: '南台灣', english: 'THE SOUTH', description: '老街、陽光與有溫度的街角。', cities: ['嘉義市', '嘉義縣', '臺南市', '高雄市', '屏東縣'], art: 'street', photo: regionPhotos.south },
+  { id: 'east', name: '東台灣', english: 'THE EAST', description: '讓山與海，重新定義一日的長度。', cities: ['花蓮縣', '臺東縣'], art: 'coast', photo: regionPhotos.east },
+  { id: 'islands', name: '離島', english: 'THE ISLANDS', description: '渡海之後，遇見另一種時間感。', cities: ['澎湖縣', '金門縣', '連江縣'], art: 'islands', photo: regionPhotos.islands },
 ]
 
 // 地點名稱為真實地名；文字是本站原創編輯摘要。兩張授權照片與一張概念視覺見 media.ts。

@@ -25,6 +25,7 @@
 .regions-grid { grid-column: 5 / -1; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); grid-auto-rows: 230px; gap: var(--grid-gap); }
 .region-card { position: relative; display: flex; flex-direction: column; min-width: 0; overflow: hidden; padding: 18px 20px; color: #fff; }
 .region-card .media-slot { position: absolute; inset: 0; z-index: 0; transition: transform .35s ease; }
+.region-card .media-slot__caption { display: none; }
 .region-card:hover .media-slot { transform: scale(1.03); }
 .region-card::after { position: absolute; z-index: 1; inset: 0; content: ''; background: linear-gradient(180deg, rgb(12 28 23 / .35), transparent 45%, rgb(10 25 21 / .7)); }
 .region-card--0 { grid-column: span 3; grid-row: span 2; }

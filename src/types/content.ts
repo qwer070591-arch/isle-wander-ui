@@ -40,6 +40,7 @@ export interface Region {
   description: string
   cities: string[]
   art: string
+  photo?: PhotoAsset
 }
 
 // 與 docs/DATA-MODEL.md 的 City 識別、關聯、更新日期及標籤規則一致。

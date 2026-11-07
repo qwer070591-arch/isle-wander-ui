@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import { attractionMedia, homePhotos } from '../data/media'
+import { attractionMedia, homePhotos, regionPhotos } from '../data/media'
 import { featuredStays } from '../data/featured-stays'
 
 const homeCredits = [homePhotos.hero, homePhotos.hualien, homePhotos.tainan]
 const attractionCredits = [attractionMedia['photo-gaomei-wetland'], attractionMedia['photo-yehliu-geopark'], attractionMedia['photo-taipingshan-forest']]
+const regionCredits = [regionPhotos.east, regionPhotos.islands]
 </script>
 
 <template>
@@ -13,9 +14,18 @@ const attractionCredits = [attractionMedia['photo-gaomei-wetland'], attractionMe
     <p class="interior-page__lead">本站使用已核對授權的實景照片、參照使用者 Stitch 概念圖製作的高解析度影像提案，以及原創 CSS 插畫。影像提案不是實際地點、旅宿或採訪攝影。</p>
     <div class="sources-page__content">
       <h2>首頁照片</h2>
-      <p>照片來源為 Wikimedia Commons 提供的縮圖；本站另製作等比例縮放、WebP 轉碼版本，保留原構圖，畫面依容器比例顯示裁切。原作者、來源及授權如下。</p>
+      <p>照片來源為 Wikimedia Commons；部分另製作等比例縮放的 WebP，新增的三仙台與澎湖照片使用原檔或 Commons 縮圖。圖片保留原構圖，畫面依容器比例以 CSS 顯示裁切。原作者、來源及授權如下。</p>
       <ul class="photo-credits">
         <li v-for="photo in homeCredits" :key="photo.sourceUrl">
+          <strong>{{ photo.caption }}</strong> — 攝影：{{ photo.credit }}；
+          <a :href="photo.sourceUrl" target="_blank" rel="noopener noreferrer">原始檔案與授權紀錄</a> ·
+          <a :href="photo.licenseUrl" target="_blank" rel="noopener noreferrer">{{ photo.license }}</a>
+        </li>
+      </ul>
+      <h2>首頁地區照片</h2>
+      <p>北台灣使用野柳、中台灣使用高美濕地、南台灣使用神農街；三張照片的來源與授權已列於本頁其他清單。東台灣與離島新增以下照片，均保留原圖構圖，僅以 CSS 在卡片中裁切。</p>
+      <ul class="photo-credits">
+        <li v-for="photo in regionCredits" :key="photo.sourceUrl">
           <strong>{{ photo.caption }}</strong> — 攝影：{{ photo.credit }}；
           <a :href="photo.sourceUrl" target="_blank" rel="noopener noreferrer">原始檔案與授權紀錄</a> ·
           <a :href="photo.licenseUrl" target="_blank" rel="noopener noreferrer">{{ photo.license }}</a>
