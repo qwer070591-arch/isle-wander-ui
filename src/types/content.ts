@@ -88,4 +88,5 @@ export interface Mood {
   title: string
   subtitle: string
   art: string
+  photo?: PhotoAsset
 }

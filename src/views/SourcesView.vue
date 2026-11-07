@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import { attractionMedia, homePhotos, regionPhotos } from '../data/media'
+import { attractionMedia, homePhotos, homepageExtras, regionPhotos } from '../data/media'
 import { featuredStays } from '../data/featured-stays'
 
 const homeCredits = [homePhotos.hero, homePhotos.hualien, homePhotos.tainan]
 const attractionCredits = [attractionMedia['photo-gaomei-wetland'], attractionMedia['photo-yehliu-geopark'], attractionMedia['photo-taipingshan-forest']]
 const regionCredits = [regionPhotos.east, regionPhotos.islands]
+const lowerHomeCredits = [homepageExtras.nantou, homepageExtras.heritage, homepageExtras.lake]
 </script>
 
 <template>
@@ -26,6 +27,15 @@ const regionCredits = [regionPhotos.east, regionPhotos.islands]
       <p>北台灣使用野柳、中台灣使用高美濕地、南台灣使用神農街；三張照片的來源與授權已列於本頁其他清單。東台灣與離島新增以下照片，均保留原圖構圖，僅以 CSS 在卡片中裁切。</p>
       <ul class="photo-credits">
         <li v-for="photo in regionCredits" :key="photo.sourceUrl">
+          <strong>{{ photo.caption }}</strong> — 攝影：{{ photo.credit }}；
+          <a :href="photo.sourceUrl" target="_blank" rel="noopener noreferrer">原始檔案與授權紀錄</a> ·
+          <a :href="photo.licenseUrl" target="_blank" rel="noopener noreferrer">{{ photo.license }}</a>
+        </li>
+      </ul>
+      <h2>首頁目的地與主題照片</h2>
+      <p>南投卡片使用忘憂森林，老街主題使用鹿港，湖畔主題使用日月潭。山林主題沿用太平山，海岸主題沿用七星潭；這兩張來源見本頁其他清單。</p>
+      <ul class="photo-credits">
+        <li v-for="photo in lowerHomeCredits" :key="photo.sourceUrl">
           <strong>{{ photo.caption }}</strong> — 攝影：{{ photo.credit }}；
           <a :href="photo.sourceUrl" target="_blank" rel="noopener noreferrer">原始檔案與授權紀錄</a> ·
           <a :href="photo.licenseUrl" target="_blank" rel="noopener noreferrer">{{ photo.license }}</a>

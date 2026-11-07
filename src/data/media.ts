@@ -13,6 +13,9 @@ import taipingshan from '../assets/photos/taipingshan-1280.webp'
 import taipingshanMobile from '../assets/photos/taipingshan-960.webp'
 import sanxiantai from '../assets/photos/region-east-sanxiantai-1080.jpg'
 import penghuBasalt from '../assets/photos/region-islands-penghu-basalt-960.jpg'
+import nantouLotus from '../assets/photos/home-nantou-lotus-1280.jpg'
+import lukangStreet from '../assets/photos/home-mood-heritage-960.jpg'
+import sunMoonLake from '../assets/photos/home-mood-lake-landscape-960.jpg'
 
 // Wikimedia Commons 照片部分另製等比例 WebP；地區新增照片使用原檔／Commons 縮圖，瀏覽器以 object-fit 顯示裁切。
 // 新增照片前須先核對來源頁、作者、授權與使用範圍。
@@ -91,5 +94,23 @@ export const regionPhotos: Record<'north' | 'central' | 'south' | 'east' | 'isla
     src: penghuBasalt, alt: '澎湖玄武岩自然保留區的海岸柱狀岩。', width: 960, height: 720,
     credit: 'P1340', sourceUrl: 'https://commons.wikimedia.org/wiki/File:Penghu_Basalt.jpg',
     license: 'CC BY-SA 3.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/3.0/', caption: '玄武岩海岸 · 澎湖',
+  },
+}
+
+export const homepageExtras: Record<'nantou' | 'heritage' | 'lake', PhotoAsset> = {
+  nantou: {
+    src: nantouLotus, alt: '南投忘憂森林的水面與林木。', width: 1280, height: 849,
+    credit: 'Lynn0927', sourceUrl: 'https://commons.wikimedia.org/wiki/File:Lotus_Forest,_Nantou_(Taiwan).jpg',
+    license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/', caption: '忘憂森林 · 南投',
+  },
+  heritage: {
+    src: lukangStreet, alt: '彰化鹿港老街的紅磚街道與沿街老屋。', width: 960, height: 641,
+    credit: 'Aa940325', sourceUrl: 'https://commons.wikimedia.org/wiki/File:%E9%B9%BF%E6%B8%AF%E8%80%81%E8%A1%97.jpg',
+    license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/', caption: '鹿港老街 · 彰化',
+  },
+  lake: {
+    src: sunMoonLake, alt: '南投日月潭的湖面與遠處群山。', width: 960, height: 720,
+    credit: 'Dquai', sourceUrl: 'https://commons.wikimedia.org/wiki/File:Landscape_of_Sun_Moon_Lake.jpg',
+    license: 'CC BY-SA 4.0', licenseUrl: 'https://creativecommons.org/licenses/by-sa/4.0/', caption: '日月潭 · 南投',
   },
 }
